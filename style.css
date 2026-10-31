@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6 !important;
+    color: #1f2937 !important;
+    top: 0px !important;
+}
+
+header {
+    background-color: #ffffff;
+    color: #111827;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Logo nell'header */
+.site-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #9ca3af;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #111827;
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.image-box {
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Immagini cliccabili */
+.image-box a img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px;
+    border: 1px solid #d1d5db;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Immagini cliccabili posizionate dall'alto */
+.image-box a img.top-crop {
+    object-position: center top !important;
+}
+
+.image-box a img:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.image-box p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+.cyber-box {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 4px solid #4b5563;
+    margin: 20px 0;
+    border: 1px solid #e5e7eb;
+}
+
+/* Stile generale per i pulsanti standard */
+button {
+    background-color: #374151;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+button:hover {
+    background-color: #111827;
+}
+
+/* Contenitori dei pulsanti in linea nella nav */
+.language-switcher-inline,
+.theme-switcher-inline {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Pulsanti identici per Lingua ed Emoji Tema */
+#lang-btn,
+#theme-btn {
+    width: 70px;
+    height: 36px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Link YouTube Social */
+.social-link-single {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.social-link-single a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #ff0000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.social-link-single a:hover {
+    background: #cc0000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f4f6;
+    color: #6b7280;
+    font-size: 14px;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* -------------------------------------------------- */
+/* GESTIONE TEMI (LIGHT / DARK)                      */
+/* -------------------------------------------------- */
+
+header, nav, main, footer {
+    background-color: transparent;
+    color: inherit;
+}
+
+/* Tema Scuro */
+body.dark-theme {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+}
+
+body.dark-theme header,
+body.dark-theme nav,
+body.dark-theme main,
+body.dark-theme footer {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p,
+body.dark-theme a {
+    color: #f3f4f6 !important;
+}
+
+body.dark-theme main {
+    background-color: #111827 !important;
+    border-color: #374151 !important;
+}
+
+body.dark-theme .cyber-box {
+    background-color: #1f2937 !important;
+    border-color: #374151 !important;
+}
+
+body.dark-theme button {
+    background-color: #4b5563;
+    color: #ffffff;
+}
+
+body.dark-theme button:hover {
+    background-color: #6b7280;
+}
